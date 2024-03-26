@@ -2,7 +2,6 @@ import * as actionsName from './action';
 
 const initializeState = {
     user: null,
-    // recipe: null,
     recipes: [],
     count: 1,
     countR: 1,
@@ -58,33 +57,6 @@ const reducer = (state = initializeState, action) => {
     
                     }
                 }
-                // case actionsName.SET_DIFFICULTY:
-                //     {
-                 
-                //         return {
-                //             ...state,
-                //             difficulty:action.data
-        
-                //         }
-                //     }
-                //     case actionsName.SET_DURATION:
-                //         {
-                     
-                //             return {
-                //                 ...state,
-                //                 duratoin:action.data
-            
-                //             }
-                //         }
-                //         case actionsName.SET_CREATOR:
-                //             {
-                         
-                //                 return {
-                //                     ...state,
-                //                     creator:action.data
-                
-                //                 }
-                //             }
                             case actionsName.SET_CATEGORY:
                                 {
                              
@@ -106,15 +78,6 @@ const reducer = (state = initializeState, action) => {
                                     case actionsName.SET_SHOPPINGRECIPE:
                                         {
                                            
-                                        //     const arr=[...shoppingList]
-                                        //  x= arr.findIndex(x=>x.Name===action.data.Name)
-                                        //     arr[x].Count+=action.data.Count;
-                                        //     shoppingList=arr
-                                        //     return {
-                                        //         ...state,
-                                        //         shoppingList
-                            
-                                        //     }
                                         }
                                     case actionsName.DELETE_RECIPE:
                                     {

@@ -12,7 +12,7 @@ import './addRecipe.css'
 import Header from "../user/header";
 
 
-// // export default function AddRecipe({ recipe }) {
+
 export default function AddRecipe() {
 
   const { state } = useLocation(state=>state.Id)
@@ -79,11 +79,8 @@ export default function AddRecipe() {
   
 
   const handleSubmit1 = (data) => {
-    // ... your submit logic
     data.preventDefault()
-    console.log("--------------7-----------------------------------------------------")
     if (gg?.state?.Type=="Edit") {
-console.log("-------------------------------------------------------------------")
 axios.post("http://localhost:8080/api/recipe/edit", {Id:recipe1?.state?.select.Id,
 Name: name,Instructions: instructions,Difficulty: difficulty,Duration: hour,UserId:u.Id,Ingrident: ingredients, Description: description,
 Img: photo,
@@ -96,11 +93,8 @@ CategoryId: category }).then()
         .then(x => {
           console.log(x.data)
           //3    ADD_RECIPE
-       //   dispatch({ type: 'ADD_RECIPE', recipe: x.data })
-
-        })
         .catch(err => console.log(err))
-      //add
+ 
     }
   };
 

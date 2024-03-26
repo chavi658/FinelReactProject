@@ -1,27 +1,4 @@
-// import { useSelector } from "react-redux";
-// import { Link } from "react-router-dom";
-//  const HomePage=()=>{
-//     const user=useSelector(state=>state.user)
-//     return(
-//         <>
-           
-//     <Link to="/homepage">דף הבית</Link><br />
-//    { !user&&<Link to="/Signin">כניסה</Link>}<br />
-//    {!user&& <Link to="/login">הרשמה</Link>}<br />
-//     { user&&<Link to="/getAllRecipes">מתכונים</Link>}<br />
-//    { user&&<Link to="/addRecipe">הוספת מתכון</Link>}<br />
-//     {/* <Link to="/editRecipe">עריכת מתכון</Link><br /> */}
-//     {/* <Link to="/deleteRecipe">מחיקת מתכון</Link><br /> */}
-//    {user&& <Link to="/getAllCategory">קטגוריות</Link>}<br/>
-//     { user&&<Link to="/addCategory">הוספת קטגוריה</Link>}<br/>
-// {/* {user&& <Link to="/getAllShoping">רשימת קניות</Link>} */}
 
-//         </>
-//     ) 
-
-
-// }
-//  export default HomePage;
 import React from 'react';
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";

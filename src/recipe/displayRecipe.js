@@ -21,13 +21,9 @@ const shopping=useSelector(x=>x.shoppingRecipe);
     const user=useSelector(x=>x.user)
     console.log(state)
     const select = state
-    console.log("dszfghjkljhgfdgh")
     console.log(select)
     const [isChecked, setIsChecked] = useState(false);
-
-    // const Id = select.Id;
     const edit = (Id, Name) => {
-        console.log("kkkkkkk")
         console.log(select)
         navig("/addRecipe", { state: { Id, select:select,Type:"Edit" } })
 
@@ -55,9 +51,6 @@ const shopping=useSelector(x=>x.shoppingRecipe);
   const AddProduct=(check, item)=>{
     
     if(check){
-        // setCount(count+1)
-      //  item.Count=setCount()
-      //  alert(item)
         console.log(item)
         console.log("count",item.Count)
       axios.post("http://localhost:8080/api/bay", item)

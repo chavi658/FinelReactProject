@@ -25,10 +25,8 @@ export default function Signin() {
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
-    //  values:user
+  
   })
-// const Username=data.userName
-// const Password=data.password
   const onSubmit = (data) => {
     console.log(data);
     axios.post("http://localhost:8080/api/user/login",{ Username:data.UserName,Password:data.Password})
